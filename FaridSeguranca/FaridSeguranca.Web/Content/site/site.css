@@ -8042,3 +8042,21 @@ section.content > .s-DataGrid {
 .s-NoteDialog .ui-dialog-content {
   padding-bottom: 10px;
 }
+.s-Default-EmpresaDialog > .size {
+  width: 650px;
+}
+.s-Default-EmpresaDialog .caption {
+  width: 150px;
+}
+.s-Default-ProblemaDialog > .size {
+  width: 650px;
+}
+.s-Default-ProblemaDialog .caption {
+  width: 150px;
+}
+.s-Default-RelatoDialog > .size {
+  width: 650px;
+}
+.s-Default-RelatoDialog .caption {
+  width: 150px;
+}

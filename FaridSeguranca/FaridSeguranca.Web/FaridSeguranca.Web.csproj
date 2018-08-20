@@ -974,6 +974,15 @@
     <Content Include="tools\Node\lessc.cmd" />
     <Content Include="tools\JsEngine\lib.d.ts_" />
     <None Include="tsconfig.json" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.EmpresaColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProblemaColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.RelatoColumns.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="node_modules\%40types\jquery\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40types\jqueryui\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40types\jquery.blockui\index.d.ts" />
@@ -1779,6 +1788,43 @@
     <TypeScriptCompile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleGrid.ts" />
     <TypeScriptCompile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleDialog.ts" />
     <TypeScriptCompile Include="Scripts\typings\serenity\Serenity.CoreLib.d.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.EmpresaRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.EmpresaService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Empresa\EmpresaIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Empresa\EmpresaDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Empresa\EmpresaGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.EmpresaForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Content\site\site.default.less" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProblemaRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProblemaService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Problema\ProblemaIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Problema\ProblemaDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Problema\ProblemaGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.ProblemaForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.RelatoRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.RelatoService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <Content Include="Modules\Default\Relato\RelatoIndex.cshtml" />
+    <TypeScriptCompile Include="Modules\Default\Relato\RelatoDialog.ts" />
+    <TypeScriptCompile Include="Modules\Default\Relato\RelatoGrid.ts" />
+    <TypeScriptCompile Include="Imports\ServerTypings\Default.RelatoForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -1796,6 +1842,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20180820170000 .cs" />
+    <Compile Include="Migrations\DefaultDB\DefaultDB_20180820152600.cs" />
     <Compile Include="Modules\Administration\AdministrationNavigation.cs" />
     <Compile Include="Modules\Administration\Language\LanguageLookup.cs" />
     <Compile Include="Modules\Administration\RolePermission\RolePermissionUpdateRequest.cs" />
@@ -2090,6 +2138,25 @@
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleForm.cs" />
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleRepository.cs" />
     <Compile Include="Modules\BasicSamples\Grids\DragDropInTreeGrid\DragDropSampleEndpoint.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaRow.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaRepository.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaEndpoint.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaPage.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaColumns.cs" />
+    <Compile Include="Modules\Default\Empresa\EmpresaForm.cs" />
+    <Compile Include="Modules\Default\DefaultNavigation.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaRow.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaRepository.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaEndpoint.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaPage.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaColumns.cs" />
+    <Compile Include="Modules\Default\Problema\ProblemaForm.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoRow.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoRepository.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoEndpoint.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoPage.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoColumns.cs" />
+    <Compile Include="Modules\Default\Relato\RelatoForm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
